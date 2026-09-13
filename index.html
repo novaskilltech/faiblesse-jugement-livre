@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="fr" dir="ltr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quand la faiblesse de jugement devient un fardeau pour le foyer</title>
 <meta name="description" content="Livre gratuit en français et en arabe.">
 
@@ -10,16 +11,72 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{--bg:#f6eddf;--paper:#fffaf2;--green:#173d34;--gold:#b68a46;--ink:#2a241d;--muted:#6e5f50;--line:rgba(88,61,34,.14)}
-*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:var(--ink);background:linear-gradient(180deg,#fbf6ee,#f2e7d6)}.wrap{wid[...]
-header{position:sticky;top:0;background:rgba(251,246,238,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}header .wrap{height:72px;display:flex;align-items:center;justify-content:spac[...]
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:70px 0 80px}.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:.16em;color:var(--gold)}.free{display:inline-[...]
-h1{font-size:clamp(42px,6vw,78px);line-height:1;color:var(--green);margin:18px 0}.rtl h1{line-height:1.18}.lead{font-size:20px;line-height:1.7;color:var(--muted)}.author{color:#5e4d3d}.actions{dis[...]
-.visual{border:1px solid #d7bd89;border-radius:220px 220px 24px 24px;background:linear-gradient(rgba(255,250,242,.9),rgba(255,250,242,.95));padding:26px;box-shadow:0 20px 50px rgba(55,39,19,.12)}.[...]
-section.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;text-align:center;font-style:italic;color:#74271f;background:rgba(255,255,255,.35)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:80px 0}.box{background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:16px;padding:28px}.box b{font:700 11[...]
-.downloads{padding:84px 0;background:linear-gradient(180deg,rgba(23,61,52,.03),rgba(23,61,52,.08));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.center{text-align:center;ma[...]
-@media(max-width:900px){.hero{grid-template-columns:1fr}.copy{text-align:center}.actions{justify-content:center}.lead{margin:auto}.visual{order:-1}.grid,.cards{grid-template-columns:1fr}}@media(ma[...]
+:root{
+  --bg:#f6eddf;
+  --paper:#fffaf2;
+  --green:#173d34;
+  --gold:#b68a46;
+  --ink:#2a241d;
+  --muted:#6e5f50;
+  --line:rgba(88,61,34,.14);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: var(--ink);
+  background: linear-gradient(180deg,#fbf6ee,#f2e7d6);
+}
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header { position: sticky; top: 0; background: rgba(251,246,238,.9); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+header .wrap { height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.brand { color: var(--green); font-weight: 700; text-decoration: none; font-size: 18px; }
+.lang { background: transparent; border: none; font-weight: 700; color: var(--green); cursor: pointer; }
+
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding: 70px 0 80px; }
+.copy { max-width: 640px; }
+.eyebrow { font: 700 11px Arial, sans-serif; letter-spacing: .16em; color: var(--gold); }
+h1 { font-size: clamp(42px,6vw,78px); line-height: 1; color: var(--green); margin: 18px 0; }
+.lead { font-size: 20px; line-height: 1.7; color: var(--muted); }
+.author { color: #5e4d3d; margin-top: 18px; }
+.actions { display: flex; gap: 12px; margin-top: 22px; }
+.btn, .download-btn { background: var(--green); color: #fffaf2; border-radius: 10px; padding: 12px 18px; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }
+.download-btn { background: linear-gradient(90deg,var(--green), #1b4038); }
+
+.visual { border: 1px solid #d7bd89; border-radius: 220px 220px 24px 24px; background: linear-gradient(rgba(255,250,242,.9),rgba(255,250,242,.95)); padding: 26px; box-shadow: 0 20px 50px rgba(55,39,19,.12); display:flex; align-items:center; justify-content:center; }
+.cover-face { width: 280px; height: 380px; background: linear-gradient(180deg,#fffaf2,#f8f0e6); border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; }
+.cover-face h3 { margin: 0; color: var(--gold); font-size: 18px; }
+
+section.band { border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:28px 0; text-align:center; font-style:italic; color:#74271f; background: rgba(255,255,255,.35); }
+
+.grid { display:grid; grid-template-columns: repeat(3,1fr); gap:18px; padding:80px 0; }
+.box { background: rgba(255,255,255,.55); border:1px solid var(--line); border-radius:16px; padding:28px; }
+.box b { font: 700 14px Arial, sans-serif; color: var(--green); display:block; margin-bottom:10px; }
+
+.downloads { padding:84px 0; background: linear-gradient(180deg,rgba(23,61,52,.03),rgba(23,61,52,.08)); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.center { text-align:center; margin: 0 auto; }
+
+.counter { padding: 40px 0; }
+.counter-card { display:flex; align-items:center; gap:18px; background: var(--paper); border-radius:12px; padding:16px; border:1px solid var(--line); }
+.counter-value { font-size: 34px; font-weight:700; color: var(--green); }
+
+footer { padding: 40px 0; color: var(--muted); }
+.foot p { margin: 6px 0 0; }
+
+@media(max-width:900px){
+  .hero{ grid-template-columns:1fr; }
+  .copy{ text-align:center; }
+  .actions{ justify-content:center; }
+  .lead{ margin:auto; }
+  .visual{ order:-1; margin-bottom:24px; }
+  .grid, .cards{ grid-template-columns:1fr; }
+}
 
 /* =========================
    TYPOGRAPHIE ARABE PREMIUM
@@ -69,34 +126,12 @@ body.rtl h6 {
   font-weight: 700;
 }
 
-body.rtl h1 {
-  line-height: 1.25;
-  font-weight: 700;
-  font-size: clamp(34px,5.2vw,72px);
-}
+body.rtl h1 { line-height: 1.25; font-weight:700; font-size: clamp(34px,5.2vw,72px); }
+body.rtl h2 { line-height:1.4; font-weight:700; }
+body.rtl h3 { line-height:1.45; font-weight:700; }
+body.rtl .lead, body.rtl .hero-lead { font-size:1.22rem; line-height:2; }
 
-body.rtl h2 {
-  line-height: 1.4;
-  font-weight: 700;
-}
-
-body.rtl h3 {
-  line-height: 1.45;
-  font-weight: 700;
-}
-
-body.rtl .lead,
-body.rtl .hero-lead {
-  font-size: 1.22rem;
-  line-height: 2;
-}
-
-body.rtl .btn,
-body.rtl .download-btn,
-body.rtl button,
-body.rtl .lang,
-body.rtl .lang-toggle,
-body.rtl .lang-btn {
+body.rtl .btn, body.rtl .download-btn, body.rtl button, body.rtl .lang, body.rtl .lang-toggle, body.rtl .lang-btn {
   font-family: "Amiri", "Noto Naskh Arabic", serif;
   direction: rtl;
   text-align: right;
@@ -111,14 +146,7 @@ body.rtl .lang-btn {
   justify-content: center;
 }
 
-body.rtl .eyebrow,
-body.rtl .mini-label,
-body.rtl .free,
-body.rtl .free-badge,
-body.rtl .pill,
-body.rtl .tag,
-body.rtl .label,
-body.rtl .card-number {
+body.rtl .eyebrow, body.rtl .mini-label, body.rtl .free, body.rtl .free-badge, body.rtl .pill, body.rtl .tag, body.rtl .label, body.rtl .card-number {
   font-family: "Noto Naskh Arabic", "Amiri", serif;
   direction: rtl;
   text-align: right;
@@ -126,126 +154,141 @@ body.rtl .card-number {
   font-weight: 700;
 }
 
-body.rtl .brand,
-body.rtl .brand-text {
-  font-family: "Amiri", "Noto Naskh Arabic", serif;
-  direction: rtl;
-  text-align: right;
-  font-weight: 700;
-}
+body.rtl .brand, body.rtl .brand-text { font-family: "Amiri", "Noto Naskh Arabic", serif; direction: rtl; text-align: right; font-weight:700; }
 
-body.rtl blockquote {
-  font-family: "Amiri", "Noto Naskh Arabic", serif;
-  font-size: 1.55rem;
-  line-height: 1.9;
-  text-align: center;
-}
+body.rtl blockquote { font-family: "Amiri", "Noto Naskh Arabic", serif; font-size:1.55rem; line-height:1.9; text-align:center; }
 
-body.rtl .card.ar,
-body.rtl .cover-face,
-body.rtl .cover-face h3,
-body.rtl .cover-face p,
-body.rtl .card.ar small,
-body.rtl .card.ar h3,
-body.rtl .card.ar p {
-  font-family: "Amiri", "Noto Naskh Arabic", serif;
-  direction: rtl;
-  text-align: right;
-}
+body.rtl .card.ar, body.rtl .cover-face, body.rtl .cover-face h3, body.rtl .cover-face p, body.rtl .card.ar small, body.rtl .card.ar h3, body.rtl .card.ar p { font-family: "Amiri", "Noto Naskh Arabic", serif; direction: rtl; text-align: right; }
 
-body.rtl .counter-value,
-body.rtl .n {
-  font-family: "Noto Naskh Arabic", "Amiri", serif;
-}
+body.rtl .counter-value, body.rtl .n { font-family: "Noto Naskh Arabic", "Amiri", serif; }
 
-body.rtl footer,
-body.rtl .footer-inner,
-body.rtl .foot {
-  direction: rtl;
-  text-align: right;
-}
+body.rtl footer, body.rtl .footer-inner, body.rtl .foot { direction: rtl; text-align: right; }
 
-/* Keep numbers like "01" readable LTR inside Arabic layout */
-body.rtl .box b,
-body.rtl .card-number,
-body.rtl .counter-card .n {
-  direction: ltr;
-  unicode-bidi: isolate;
-  text-align: left;
-  font-variant-numeric: tabular-nums;
-  -moz-font-feature-settings: "tnum" 1;
-  font-feature-settings: "tnum" 1;
-}
+body.rtl .box b, body.rtl .card-number, body.rtl .counter-card .n { direction: ltr; unicode-bidi: isolate; text-align: left; font-variant-numeric: tabular-nums; -moz-font-feature-settings: "tnum" 1; font-feature-settings: "tnum" 1; }
 
-/* Fine-tuning: responsive H1 and mobile behaviors */
-@media (max-width: 1100px) {
-  body.rtl h1 {
-    font-size: clamp(30px,5vw,64px);
-  }
-}
-
-@media (max-width: 900px) {
-  body.rtl h1 {
-    font-size: clamp(28px,6.5vw,48px);
-    line-height: 1.28;
-  }
-}
-
+@media (max-width: 1100px) { body.rtl h1 { font-size: clamp(30px,5vw,64px); } }
+@media (max-width: 900px) { body.rtl h1 { font-size: clamp(28px,6.5vw,48px); line-height:1.28; } }
 @media (max-width: 650px) {
-  body.rtl h1 {
-    font-size: 2.65rem;
-    line-height: 1.28;
-  }
-
-  body.rtl h2 {
-    font-size: 2rem;
-    line-height: 1.42;
-  }
-
-  body.rtl h3 {
-    font-size: 1.55rem;
-  }
-
-  body.rtl .lead,
-  body.rtl .hero-lead {
-    font-size: 1.08rem;
-    line-height: 1.95;
-  }
-
-  body.rtl .btn,
-  body.rtl .download-btn {
-    font-size: 1rem;
-    justify-content: center;
-    text-align: center;
-    min-width: 0;
-    padding: .55rem .8rem;
-  }
+  body.rtl h1 { font-size: 2.65rem; line-height:1.28; }
+  body.rtl h2 { font-size:2rem; line-height:1.42; }
+  body.rtl h3 { font-size:1.55rem; }
+  body.rtl .lead, body.rtl .hero-lead { font-size:1.08rem; line-height:1.95; }
+  body.rtl .btn, body.rtl .download-btn { font-size:1rem; justify-content:center; text-align:center; min-width:0; padding:.55rem .8rem; }
 }
 
-</style></head>
+</style>
+</head>
 <body>
-<header><div class="wrap"><a class="brand" href="#top">✦ <span data-fr="Sagesse du foyer" data-ar="حكمة البيت">Sagesse du foyer</span></a><button id="lang" class="lang">FR ↔ العربي</button></div></header>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">✦ <span data-fr="Sagesse du foyer" data-ar="حكمة البيت">Sagesse du foyer</span></a>
+    <button id="lang" class="lang" aria-label="Changer la langue">FR ↔ العربية</button>
+  </div>
+</header>
+
 <main id="top" class="wrap">
-<section class="hero"><div class="copy"><div class="eyebrow"><span data-fr="LIVRE GRATUIT · FRANÇAIS / ARABE" data-ar="كتاب مجاني · الفرنسية / العربية">LIVRE GRATUIT · FRANÇAIS / ARABE</span></div>
-<h1 data-fr="Quand la faiblesse de jugement devient un fardeau pour le foyer" data-ar="عندما تصبح ضعف الحكم عبئًا على البيت">Quand la faiblesse de jugement devient un fardeau pour le foyer</h1>
-<p class="lead" data-fr="Un recueil de sagesse destiné aux foyers." data-ar="مجموعة من الحكم موجهة للأسر.">Un recueil de sagesse destiné aux foyers.</p>
-<div class="visual"><div class="cover-face card ar"><h3 data-fr="Couverture" data-ar="الغلاف">Couverture</h3></div></div>
-</div></section>
+  <section class="hero">
+    <div class="copy">
+      <div class="eyebrow"><span data-fr="LIVRE GRATUIT · FRANÇAIS / ARABE" data-ar="كتاب مجاني · الفرنسية / العربية">LIVRE GRATUIT · FRANÇAIS / ARABE</span></div>
+      <h1 data-fr="Quand la faiblesse de jugement devient un fardeau pour le foyer" data-ar="عندما تصبح ضعف الحكم عبئًا على البيت">Quand la faiblesse de jugement devient un fardeau pour le foyer</h1>
+      <p class="lead" data-fr="Un recueil de sagesse destiné aux foyers." data-ar="مجموعة من الحكم موجهة للأسر.">Un recueil de sagesse destiné aux foyers.</p>
+      <div class="actions">
+        <a class="download-btn btn" data-count href="livre-francais.pdf" download data-fr="Télécharger (FR)" data-ar="تحميل (FR)">Télécharger (FR)</a>
+        <a class="download-btn btn" data-count href="livre-arabe.pdf" download data-fr="Télécharger (AR)" data-ar="تحميل (AR)">Télécharger (AR)</a>
+      </div>
+    </div>
+    <div class="visual">
+      <div class="cover-face card ar">
+        <h3 data-fr="Couverture" data-ar="الغلاف">Couverture</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="band"><div class="wrap"><span data-fr="« La sagesse protège ce que la colère peut détruire. »" data-ar="« الحكمة تحفظ ما قد يهدمه الغضب. »">« La sagesse protège ce que la colère peut détruire. »</span></div></section>
+
+  <section class="wrap grid" aria-label="Caractéristiques">
+    <article class="box"><b>01</b><h3 data-fr="Paroles et sagesses" data-ar="أقوال وحكم">Paroles et sagesses</h3><p data-fr="Des textes choisis avec une distinction claire." data-ar="نصوص مختارة بدقة.">Des textes choisis avec une distinction claire.</p></article>
+    <article class="box"><b>02</b><h3 data-fr="Pour la famille" data-ar="للعائلة">Pour la famille</h3><p data-fr="Conseils pratiques pour la vie de foyer." data-ar="نصائح عملية للحياة الأسرية.">Conseils pratiques pour la vie de foyer.</p></article>
+    <article class="box"><b>03</b><h3 data-fr="Accessible" data-ar="متاح للجميع">Accessible</h3><p data-fr="Formats PDF prêts à télécharger." data-ar="ملفات PDF جاهزة للتحميل.">Formats PDF prêts à télécharger.</p></article>
+  </section>
+
+  <section class="downloads">
+    <div class="wrap center">
+      <div class="eyebrow" data-fr="TÉLÉCHARGEMENT GRATUIT" data-ar="تحميل مجاني">TÉLÉCHARGEMENT GRATUIT</div>
+      <h2 data-fr="Choisissez votre langue" data-ar="اختر لغتك">Choisissez votre langue</h2>
+      <div style="margin-top:18px;">
+        <a class="download-btn btn" data-count href="livre-francais.pdf" download data-fr="Télécharger (FR)" data-ar="تحميل (FR)">Télécharger (FR)</a>
+        <a class="download-btn btn" data-count href="livre-arabe.pdf" download data-fr="Télécharger (AR)" data-ar="تحميل (AR)" style="margin-left:12px;">Télécharger (AR)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="counter">
+    <div class="wrap">
+      <div class="counter-card">
+        <div style="font-size:20px;">↓</div>
+        <div>
+          <div class="label" data-fr="TÉLÉCHARGEMENTS" data-ar="التنزيلات">TÉLÉCHARGEMENTS</div>
+          <div id="count" class="counter-value">0</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
-<section class="band"><div class="wrap"><span data-fr="« La sagesse protège ce que la colère peut détruire. »" data-ar="« الحكمة تحفظ ما قد يهدمه الغضب. »">« La sagesse protège ce que la colère peut détruire. »</span></div></section>
-<section class="wrap grid"><article class="box"><b>01</b><h3 data-fr="Paroles et sagesses" data-ar="أقوال وحكم">Paroles et sagesses</h3><p data-fr="Des textes choisis avec une distinction classique." data-ar="نصوص مختارة بذوق أدبي.">Des textes choisis avec une distinction classique.</p></article></section>
-<section class="downloads"><div class="wrap"><div class="center"><div class="eyebrow" data-fr="TÉLÉCHARGEMENT GRATUIT" data-ar="تحميل مجاني">TÉLÉCHARGEMENT GRATUIT</div><h2 data-fr="Choisissez votre langue" data-ar="اختر لغتك">Choisissez votre langue</h2>
-<a class="download-btn btn" data-count href="livre-francais.pdf" download data-fr="Télécharger (FR)" data-ar="تحميل (FR)">Télécharger (FR)</a>
-<a class="download-btn btn" data-count href="livre-arabe.pdf" download data-fr="Télécharger (AR)" data-ar="تحميل (AR)">Télécharger (AR)</a>
-</div></div></section>
-<section class="counter"><div class="wrap"><div class="counter-card"><div>↓</div><div><div class="label" data-fr="TÉLÉCHARGEMENTS" data-ar="التنزيلات">TÉLÉCHARGEMENTS</div><div id="count" class="counter-value n">0</div></div></div></div></section>
-<footer><div class="wrap foot"><div><strong>Salah Eddine Ahmed Abou Soulaymane</strong><p data-fr="Deux langues, un même objectif : préserver le foyer par la sagesse." data-ar="لغتان وغاية واحدة: حفظ البيت بالحكمة.">Deux langues, un même objectif : préserver le foyer par la sagesse.</p></div></div></footer>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Salah Eddine Ahmed Abou Soulaymane</strong>
+      <p data-fr="Deux langues, un même objectif : préserver le foyer par la sagesse." data-ar="لغتان وغاية واحدة: الحفاظ على البيت بالحكمة.">Deux langues, un même objectif : préserver le foyer par la sagesse.</p>
+    </div>
+  </div>
+</footer>
+
 <script>
-const btn=document.getElementById('lang');const nodes=document.querySelectorAll('[data-fr][data-ar]');const count=document.getElementById('count');
-function setLang(lang){const ar=lang==='ar';document.documentElement.lang=ar?'ar':'fr';document.documentElement.dir=ar?'rtl':'ltr';document.body.classList.toggle('rtl',ar);nodes.forEach(n=>n.textContent=(ar?n.getAttribute('data-ar'):n.getAttribute('data-fr')));if(ar){document.body.classList.add('rtl')}else{document.body.classList.remove('rtl')}}
-async function refresh(){try{const r=await fetch('https://api.countapi.xyz/get/faiblesse-jugement-livre/downloads');const d=await r.json();window.v=d.value||0}catch(e){window.v=Number(localStorage.getItem('count')||0)}document.getElementById('count').textContent=window.v}
-async function hit(){try{const r=await fetch('https://api.countapi.xyz/hit/faiblesse-jugement-livre/downloads');const d=await r.json();window.v=d.value||0}catch(e){window.v=Number(localStorage.getItem('count')||0)+1}localStorage.setItem('count',window.v);document.getElementById('count').textContent=window.v}
-document.querySelectorAll('[data-count]').forEach(a=>a.addEventListener('click',hit));btn.addEventListener('click',()=>setLang(document.documentElement.lang==='ar'?'fr':'ar'));
-window.addEventListener('DOMContentLoaded',()=>{setLang(document.documentElement.lang||'fr');refresh();});
+const btn = document.getElementById('lang');
+const nodes = document.querySelectorAll('[data-fr][data-ar]');
+const countEl = document.getElementById('count');
+
+function setLang(lang) {
+  const ar = lang === 'ar';
+  document.documentElement.lang = ar ? 'ar' : 'fr';
+  document.documentElement.dir = ar ? 'rtl' : 'ltr';
+  document.body.classList.toggle('rtl', ar);
+  nodes.forEach(n => n.textContent = ar ? n.getAttribute('data-ar') : n.getAttribute('data-fr'));
+  // persist
+  try { localStorage.setItem('book_lang', ar ? 'ar' : 'fr'); } catch (e) { }
+}
+
+async function refresh() {
+  try {
+    const r = await fetch('https://api.countapi.xyz/get/faiblesse-jugement-livre/downloads');
+    const d = await r.json();
+    window.v = d.value || 0;
+  } catch (e) {
+    const fallback_count = Number(localStorage.getItem('fallback_count')) || 0;
+    window.v = fallback_count;
+  }
+  if (countEl) countEl.textContent = window.v;
+}
+
+async function hit() {
+  try {
+    const r = await fetch('https://api.countapi.xyz/hit/faiblesse-jugement-livre/downloads');
+    const d = await r.json();
+    window.v = d.value || 0;
+  } catch (e) {
+    window.v = Number(localStorage.getItem('fallback_count')) || window.v || 0;
+  }
+  localStorage.setItem('fallback_count', String(window.v));
+  if (countEl) countEl.textContent = window.v;
+}
+
+document.querySelectorAll('[data-count]').forEach(a => a.addEventListener('click', hit));
+btn.addEventListener('click', () => setLang(document.documentElement.lang === 'ar' ? 'fr' : 'ar'));
+window.addEventListener('DOMContentLoaded', () => { setLang(localStorage.getItem('book_lang') || document.documentElement.lang || 'fr'); refresh(); });
 </script>
-</body></html>
+
+</body>
+</html>

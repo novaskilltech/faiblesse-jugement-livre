@@ -4,6 +4,11 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quand la faiblesse de jugement devient un fardeau pour le foyer</title>
 <meta name="description" content="Livre gratuit en français et en arabe.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 :root{--bg:#f6eddf;--paper:#fffaf2;--green:#173d34;--gold:#b68a46;--ink:#2a241d;--muted:#6e5f50;--line:rgba(88,61,34,.14)}
 *{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:var(--ink);background:linear-gradient(180deg,#fbf6ee,#f2e7d6)}body.rtl{direction:rtl;font-family:Tahoma,Arial,sans-serif}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
@@ -15,6 +20,170 @@ section.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:80px 0}.box{background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:16px;padding:28px}.box b{font:700 11px Arial,sans-serif;color:var(--gold)}.box h3{color:var(--green);font-size:25px;margin:16px 0 10px}.box p{margin:0;color:var(--muted);line-height:1.7}
 .downloads{padding:84px 0;background:linear-gradient(180deg,rgba(23,61,52,.03),rgba(23,61,52,.08));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.center{text-align:center;max-width:760px;margin:0 auto 40px}.center h2{font-size:42px;color:var(--green);margin:12px 0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}.dl{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px}.dl .tag{width:72px;height:72px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(180deg,#174137,#205446);color:#fff;font:700 24px Arial,sans-serif;margin-bottom:16px}.dl h3{font-size:28px;color:var(--green);margin:0 0 8px}.dl p{color:var(--muted);line-height:1.6}.counter{padding:70px 0}.counter-card{max-width:720px;margin:auto;background:linear-gradient(135deg,#173d34,#0f2f29);color:#fff;border:1px solid #d7bd89;border-radius:22px;padding:28px 34px;display:flex;gap:24px;align-items:center;justify-content:center}.counter-card .n{font:700 52px Arial,sans-serif}.counter-card .label{font:700 11px Arial,sans-serif;letter-spacing:.16em;color:#d7bd89}footer{border-top:1px solid var(--line);padding:30px 0 40px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:flex-end}.foot strong{color:var(--green)}.foot p{margin:7px 0 0;color:var(--muted);font-size:13px}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.copy{text-align:center}.actions{justify-content:center}.lead{margin:auto}.visual{order:-1}.grid,.cards{grid-template-columns:1fr}}@media(max-width:640px){h1{font-size:42px}.center h2{font-size:34px}.foot{flex-direction:column;align-items:center;text-align:center}}
+
+/* =========================
+   TYPOGRAPHIE ARABE PREMIUM
+   ========================= */
+body.rtl {
+  direction: rtl;
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+}
+
+body.rtl,
+body.rtl p,
+body.rtl li,
+body.rtl blockquote,
+body.rtl .lead,
+body.rtl .author,
+body.rtl .author-line,
+body.rtl .hero-lead,
+body.rtl .box p,
+body.rtl .about-card p,
+body.rtl .book p,
+body.rtl .dl p,
+body.rtl .edition-copy p,
+body.rtl .foot p,
+body.rtl .footer-inner p,
+body.rtl .counter-card p {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.95;
+  letter-spacing: 0;
+  word-spacing: 0.02em;
+}
+
+body.rtl h1,
+body.rtl h2,
+body.rtl h3,
+body.rtl h4,
+body.rtl h5,
+body.rtl h6 {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  direction: rtl;
+  text-align: right;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+body.rtl h1 {
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+body.rtl h2 {
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+body.rtl h3 {
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+body.rtl .lead,
+body.rtl .hero-lead {
+  font-size: 1.22rem;
+  line-height: 2;
+}
+
+body.rtl .btn,
+body.rtl .download-btn,
+body.rtl button,
+body.rtl .lang,
+body.rtl .lang-toggle,
+body.rtl .lang-btn {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  direction: rtl;
+  text-align: right;
+  letter-spacing: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+body.rtl .eyebrow,
+body.rtl .mini-label,
+body.rtl .free,
+body.rtl .free-badge,
+body.rtl .pill,
+body.rtl .tag,
+body.rtl .label,
+body.rtl .card-number {
+  font-family: "Noto Naskh Arabic", "Amiri", serif;
+  direction: rtl;
+  text-align: right;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+body.rtl .brand,
+body.rtl .brand-text {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  direction: rtl;
+  text-align: right;
+  font-weight: 700;
+}
+
+body.rtl blockquote {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 1.55rem;
+  line-height: 1.9;
+  text-align: center;
+}
+
+body.rtl .card.ar,
+body.rtl .cover-face,
+body.rtl .cover-face h3,
+body.rtl .cover-face p,
+body.rtl .card.ar small,
+body.rtl .card.ar h3,
+body.rtl .card.ar p {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  direction: rtl;
+  text-align: right;
+}
+
+body.rtl .counter-value,
+body.rtl .n {
+  font-family: "Noto Naskh Arabic", "Amiri", serif;
+}
+
+body.rtl footer,
+body.rtl .footer-inner,
+body.rtl .foot {
+  direction: rtl;
+  text-align: right;
+}
+
+@media (max-width: 650px) {
+  body.rtl h1 {
+    font-size: 2.65rem;
+    line-height: 1.28;
+  }
+
+  body.rtl h2 {
+    font-size: 2rem;
+    line-height: 1.42;
+  }
+
+  body.rtl h3 {
+    font-size: 1.55rem;
+  }
+
+  body.rtl .lead,
+  body.rtl .hero-lead {
+    font-size: 1.08rem;
+    line-height: 1.95;
+  }
+
+  body.rtl .btn,
+  body.rtl .download-btn {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 </style></head>
 <body>
 <header><div class="wrap"><a class="brand" href="#top">✦ <span data-fr="Sagesse du foyer" data-ar="حكمة البيت">Sagesse du foyer</span></a><button id="lang" class="lang">FR ↔ العربية</button></div></header>
